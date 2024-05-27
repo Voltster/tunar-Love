@@ -29,7 +29,7 @@ const GiftSeason = () => {
         </Link>
       </div>
       <div className="w-full md:w-1/2">
-        <img className="w-full h-auto" src={Unisex} alt="Top Story" />
+        <img className="w-full h-auto" src={Unisex} alt="Top Story" loading="lazy"/>
       </div>
     </div>
   );

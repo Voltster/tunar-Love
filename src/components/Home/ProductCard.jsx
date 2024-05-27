@@ -17,6 +17,7 @@ const ProductCard = ({ id, image, title, description, sizes, price }) => {
           className="w-full h-auto object-cover rounded-lg"
           src={image}
           alt={title}
+          loading="lazy"
         />
       </div>
       {/* Right Side Details */}

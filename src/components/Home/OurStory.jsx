@@ -2,6 +2,9 @@ import ProductCard from "./ProductCard";
 import image2 from "../../assets/jewellery/image 2.png";
 import image from "../../assets/jewellery/image 3.png";
 import image3 from "../../assets/jewellery/Wedding.png";
+import anillo from "../../assets/jewellery/anillo.png";
+import img1 from "../../assets/jewellery/image 1.png";
+
 const productData = [
   {
     image: image2,
@@ -31,11 +34,7 @@ const OurStory = () => {
           data-aos-delay="50"
           data-aos-duration="1000"
         >
-          <img
-            className="w-full h-auto"
-            src="src/assets/jewellery/image 1.png"
-            alt="Top Story"
-          />
+          <img className="w-full h-auto" src={img1} alt="Top Story"  loading="lazy"/>
         </div>
         <div
           className="w-full md:w-1/2 my-auto p-4"
@@ -64,8 +63,9 @@ const OurStory = () => {
         >
           <img
             className="w-full h-auto"
-            src="src/assets/jewellery/anillo-diamantes-lujo-aislado-sobre-fondo-blanco 1.png"
+            src={anillo}
             alt="Top Story"
+            loading="lazy"
           />
         </div>
         <div
@@ -115,6 +115,7 @@ const OurStory = () => {
             className="h-[60vh] md:h-[80vh] lg:h-[120vh] w-full object-contain rounded-lg"
             src={image3}
             alt="Gold Jewelry"
+            loading="lazy"
           />
         </div>
       </div>

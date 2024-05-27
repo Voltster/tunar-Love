@@ -42,6 +42,7 @@ const BestSellers = () => {
                 className="w-full aspect-square"
                 src={item.image}
                 alt={item.title}
+                loading="lazy"
               />
               <div className="px-6 py-4">
                 <h3 className="text-lg mb-2 text-left">{item.title}</h3>
